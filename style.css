@@ -1,0 +1,35 @@
+body {
+	background: lightgrey;
+	text-align: center;
+}
+select {
+	border: 3px solid red;
+	border-radius: 5px;
+	width: 8vh;
+	height: 40px;
+
+}
+.form-group-name {
+	width: 99vh;
+	height: 100px;
+	display: inline-block;
+	text-align: center;
+}
+.form-group-name input{
+	width: 80%;
+	height: 30%;
+}
+.form-group{
+	width: 200vh;
+	height: 100px;
+	display: block;
+	text-align: center;
+}
+.form-group input{
+	width: 80%;
+	height: 30%;
+}
+.btn {
+	width: 12vh;
+	height: 8vh;
+}
