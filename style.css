@@ -1,16 +1,21 @@
 body {
 	background: lightgrey;
+	padding: 0;
+	margin: 0;
 	text-align: center;
 }
-select {
-	border: 3px solid red;
-	border-radius: 5px;
-	width: 8vh;
-	height: 40px;
-
+.select {
+	width: 100%;
+	height: auto;
+	display: block;
 }
+select {
+		border: 3px solid black;
+		border-radius: 5px;
+}
+
 .form-group-name {
-	width: 99vh;
+	width: 40%;
 	height: 100px;
 	display: inline-block;
 	text-align: center;
@@ -27,9 +32,65 @@ select {
 }
 .form-group input{
 	width: 80%;
-	height: 30%;
+
 }
 .btn {
 	width: 12vh;
 	height: 8vh;
+}
+
+/* mobile elements */
+
+.st, .nd, .rd {
+	width: 5%;
+	height: 30px;
+	background: blue;
+	display: none;
+	text-align: center;
+	align-items: center;
+	align-content: center;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+a {
+	color: white;
+}
+
+
+
+/* media */
+
+
+@media screen and (max-width: 1000px){ 
+	.select {
+		background: white;
+		width: 100px;
+		height: auto;
+		display: none;
+		float: left;
+	}
+	.st, .nd, .rd {
+		display: inline-block;
+	}
+	.form-group-name, .form-group {
+		width: 100%;
+		height: auto;
+		display: block;
+		padding-top: 2%;
+		float: left;
+	}
+	.form-group input, .form-group-name input{
+		margin-right:5%;
+		float: right;
+	}
+	.form-group label, .form-group-name label{
+		float: left;
+		margin-left: 5%;
+	}
+	.btn {
+		width: 90%;
+		height: 30px;
+		background: lightblue;
+		margin-top: 2%;
+	}
 }
